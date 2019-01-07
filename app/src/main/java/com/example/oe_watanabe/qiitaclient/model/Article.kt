@@ -34,5 +34,4 @@ data class Article(val id: String,
     override fun describeContents(): Int = 0
 
 
-
 }

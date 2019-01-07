@@ -11,7 +11,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_centerVertical="true"
-        tools:background="#f00"/>
+        tools:background="#f00" />
 
     <TextView
         android:id="@+id/title_text_view"
@@ -23,7 +23,7 @@
         android:maxLines="2"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:text="記事のタイトル"/>
+        tools:text="記事のタイトル" />
 
     <TextView
         android:id="@+id/user_name_text_view"
@@ -34,10 +34,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        tools:text="ユーザの名前"/>
-
-
-
+        tools:text="ユーザの名前" />
 
 
 </RelativeLayout>

@@ -1,7 +1,5 @@
 package com.example.oe_watanabe.qiitaclient
 
-import android.opengl.Visibility
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -14,7 +12,6 @@ import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity
 import com.trello.rxlifecycle.kotlin.bindToLifecycle
-import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -36,7 +33,7 @@ class MainActivity : RxAppCompatActivity() {
 
         val listView: ListView = findViewById<ListView>(R.id.list_view)
         listView.adapter = listAdapter
-        listView.setOnItemClickListener{articleView, view, position, id ->
+        listView.setOnItemClickListener { articleView, view, position, id ->
             val article = listAdapter.articles[position]
             ArticleActivity.intent(this, article).let {
                 startActivity(it)
